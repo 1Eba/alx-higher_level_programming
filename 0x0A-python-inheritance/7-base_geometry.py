@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ Creates an empty class called BaseGeometry
+Author: Barok
+
 """
 
 
