@@ -1,23 +1,26 @@
 #!/usr/bin/python3
-""" Creates an empty class called BaseGeometry
+"""Integer validator
 Author: Barok
-
 """
 
 
 class BaseGeometry:
-    def __init__(self):
-        pass
+    """An empty class"""
 
     def area(self):
-        """raise an exception
+        """Raises an exception because...
+        area is not implemented
         """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """validates value
+        """Validates the inputs: name and values
+        Args:
+            name(str) - input name as string
+            value(int): pararams validator
         """
-        if type(value) is not int:
+        if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+        return value
