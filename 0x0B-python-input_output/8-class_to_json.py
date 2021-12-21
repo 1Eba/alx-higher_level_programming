@@ -3,8 +3,8 @@
 """
 
 
-def Class_to_json(obj):
-    """Return the dictionary represaentation
+def class_to_json(obj):
+    """Return the dictionary representation
     of a simple data structure.
 
     """
