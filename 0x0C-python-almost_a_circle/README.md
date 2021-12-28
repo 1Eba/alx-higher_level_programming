@@ -40,6 +40,7 @@ args and kwargs
 Serialization/Deserialization
 
 JSON
+https://user-images.githubusercontent.com/88311316/147608292-45de33fb-0bda-4ed1-b7b4-ee4dba736083.mp4
 
 Resources
 
