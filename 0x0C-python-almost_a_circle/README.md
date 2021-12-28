@@ -41,19 +41,91 @@ Serialization/Deserialization
 
 JSON
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://user-images.githubusercontent.com/88311316/147608292-45de33fb-0bda-4ed1-b7b4-ee4dba736083.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Resources
 
 Read or watch:
 
 
 
-args/kwargs
+.args/kwargs
 
-JSON encoder and decoder
+.JSON encoder and decoder
 
-unittest module
+.unittest module
 
-Python test cheatsheet
+.Python test cheatsheet
 
 Learning Objectives
 
