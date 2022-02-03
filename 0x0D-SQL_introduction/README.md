@@ -334,6 +334,7 @@ Enter password:
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 1-create_database_if_missing.sql
@@ -341,22 +342,184 @@ File: 1-create_database_if_missing.sql
 2. Delete a database
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+Quiz questions
+Show
+Question #0
+What does SQL stand for?
+
+ Sequences of Query Logic
+ Structured Query Language
+ Solid Query Language
+ Structured Question Language
+Question #1
+What is a relational database? (please select all correct answers)
+
+ a database
+ a collection of data
+ married databases
+ data are organized by tables, records and columns
+ data are organized by tables and indexes
+ a table containing multiple object representation
+ a table containing only one object representation
+Question #2
+What does DDL stand for?
+
+ Data Definition Language
+ Database Definition Language
+ Data Document Language
+ Document Data Language
+Question #3
+What does DML stand for?
+
+ Database Manipulation Language
+ Document Manipulation Language
+ Data Manipulation Language
+ Document Model Language
+Question #4
+How do you list all users in this table?
+
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+ DELETE * FROM users;
+ SELECT * FROM users;
+ SELECT ALL users;
+Question #5
+How to you add a new record in the table users?
+
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+ INSERT users (id, name, age) VALUES (2, “Betty”, 30);
+ INSERT INTO users (id, name) VALUES (2, “Betty”, 30);
+ INSERT INTO users (id, name, age) VALUES (2, “Betty”, 30);
+ INSERT INTO users (id, name, age) VALUES (2, “Betty”);
+Question #6
+How do you delete the users record with id = 89 in this table?
+
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+ DELETE users WHERE id = 89;
+ DELETE FROM users WHERE id = 89;
+ DELETE FROM users;
+ DELETE FROM users WHERE id IS EQUAL TO 89;
+Question #7
+How do you change the name of the users record with id = 89 to Holberton?
+
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+ UPDATE users SET name = “Holberton” WHERE id = 89;
+ CHANGE users SET name = “Holberton” WHERE id = 89;
+ UPDATE users SET name = “Holberton”;
+Question #8
+How do you list all users records with age > 21 in this table?
+
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                  |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+| users | CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(256) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 |
++-------+-------------------------------------------------------------------------------------------------------------------------------+
+ SELECT * FROM users WHERE age < 21;
+ SELECT * FROM users WHERE age IS UP TO 21;
+ SELECT * FROM users WHERE age > 21;
+ SELECT * FROM users WHERE age BETWEEN 21 AND 89;
+Tasks
+View Contents
+0. List databases
+Write a script that lists all databases of your MySQL server.
+
+guillaume@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
+Enter password: 
+Database
+information_schema
+mysql
+performance_schema
+guillaume@ubuntu:~/$ 
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 0-list_databases.sql
+1. Create a database
+Write a script that creates the database hbtn_0c_0 in your MySQL server.
+
+If the database hbtn_0c_0 already exists, your script should not fail
+You are not allowed to use the SELECT or SHOW statements
+guillaume@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
+Enter password: 
+guillaume@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
+Enter password: 
+Database
+information_schema
+hbtn_0c_0
+mysql
+performance_schema
+guillaume@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
+Enter password: 
+guillaume@ubuntu:~/$ 
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 1-create_database_if_missing.sql
+2. Delete a database
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that deletes the database hbtn_0c_0 in your MySQL server.
 
 If the database hbtn_0c_0 doesn’t exist, your script should not fail
 You are not allowed to use the SELECT or SHOW statements
 guillaume@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 Enter password: 
+<<<<<<< HEAD
 Database                                                                                     
 hbtn_0c_0                                                                                    
 information_schema                                                                           
 mysql                                                                                        
 performance_schema                                                                           
 sys        
+=======
+Database
+information_schema
+hbtn_0c_0
+mysql
+performance_schema
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 guillaume@ubuntu:~/$ cat 2-remove_database.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 guillaume@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 Enter password: 
+<<<<<<< HEAD
 Database                                                                                                                                                                  
 information_schema                                                                           
 mysql                                                                                        
@@ -372,11 +535,25 @@ File: 2-remove_database.sql
 3. List tables
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+Database
+information_schema
+mysql
+performance_schema
+guillaume@ubuntu:~/$ 
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 2-remove_database.sql
+3. List tables
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that lists all the tables of a database in your MySQL server.
 
 The database name will be passed as argument of mysql command (in the following example: mysql is the name of the database)
 guillaume@ubuntu:~/$ cat 3-list_tables.sql | mysql -hlocalhost -uroot -p mysql
 Enter password: 
+<<<<<<< HEAD
 Tables_in_mysql                                                                              
 columns_priv                                                                                 
 component                                                                                    
@@ -412,10 +589,37 @@ time_zone_leap_second
 time_zone_name                                                                               
 time_zone_transition                                                                         
 time_zone_transition_type                                                                    
+=======
+Tables_in_mysql
+columns_priv
+db
+event
+func
+general_log
+help_category
+help_keyword
+help_relation
+help_topic
+host
+ndb_binlog_index
+plugin
+proc
+procs_priv
+proxies_priv
+servers
+slow_log
+tables_priv
+time_zone
+time_zone_leap_second
+time_zone_name
+time_zone_transition
+time_zone_transition_type
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 user
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 3-list_tables.sql
@@ -423,6 +627,12 @@ File: 3-list_tables.sql
 4. First table
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 3-list_tables.sql
+4. First table
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that creates a table called first_table in the current database in your MySQL server.
 
 first_table description:
@@ -440,6 +650,7 @@ first_table
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 4-first_table.sql
@@ -447,12 +658,19 @@ File: 4-first_table.sql
 5. Full description
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 4-first_table.sql
+5. Full description
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server.
 
 The database name will be passed as an argument of the mysql command
 You are not allowed to use the DESCRIBE or EXPLAIN statements
 guillaume@ubuntu:~/$ cat 5-full_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
+<<<<<<< HEAD
 Table   Create Table                                                                         
 first_table     CREATE TABLE `first_table` (\n  `id` int DEFAULT NULL,\n  `name` varchar(256) DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci        
 guillaume@ubuntu:~/$ 
@@ -465,6 +683,17 @@ File: 5-full_table.sql
 6. List all in table
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+Table   Create Table
+first_table CREATE TABLE `first_table` (\n  `id` int(11) DEFAULT NULL,\n  `name` varchar(256) DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
+guillaume@ubuntu:~/$ 
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 5-full_table.sql
+6. List all in table
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server.
 
 All fields should be printed
@@ -474,6 +703,7 @@ Enter password:
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 6-list_values.sql
@@ -481,18 +711,32 @@ File: 6-list_values.sql
 7. First add
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 6-list_values.sql
+7. First add
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server.
 
 New row:
 id = 89
+<<<<<<< HEAD
 name = Best School
+=======
+name = Holberton School
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 The database name will be passed as an argument of the mysql command
 guillaume@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 guillaume@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 id  name
+<<<<<<< HEAD
 89  Best School
+=======
+89  Holberton School
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 guillaume@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 guillaume@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
@@ -500,6 +744,7 @@ Enter password:
 guillaume@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 id  name
+<<<<<<< HEAD
 89  Best School
 89  Best School
 89  Best School
@@ -513,6 +758,18 @@ File: 7-insert_value.sql
 8. Count 89
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+89  Holberton School
+89  Holberton School
+89  Holberton School
+guillaume@ubuntu:~/$ 
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 7-insert_value.sql
+8. Count 89
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.
 
 The database name will be passed as an argument of the mysql command
@@ -522,6 +779,7 @@ Enter password:
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 8-count_89.sql
@@ -529,6 +787,12 @@ File: 8-count_89.sql
 9. Full creation
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 8-count_89.sql
+9. Full creation
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
 
 second_table description:
@@ -548,6 +812,7 @@ Enter password:
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 9-full_creation.sql
@@ -555,6 +820,12 @@ File: 9-full_creation.sql
 10. List by best
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 9-full_creation.sql
+10. List by best
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 Results should display both the score and the name (in this order)
@@ -570,6 +841,7 @@ score   name
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 10-top_score.sql
@@ -577,6 +849,12 @@ File: 10-top_score.sql
 11. Select the best
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 10-top_score.sql
+11. Select the best
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 Results should display both the score and the name (in this order)
@@ -590,6 +868,7 @@ score   name
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 11-best_score.sql
@@ -597,6 +876,12 @@ File: 11-best_score.sql
 12. Cheating is bad
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 11-best_score.sql
+12. Cheating is bad
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that updates the score of Bob to 10 in the table second_table.
 
 You are not allowed to use Bob’s id value, only the name field
@@ -613,6 +898,7 @@ score   name
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 12-no_cheating.sql
@@ -620,6 +906,12 @@ File: 12-no_cheating.sql
 13. Score too low
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 12-no_cheating.sql
+13. Score too low
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 The database name will be passed as an argument of the mysql command
@@ -634,6 +926,7 @@ score   name
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 13-change_class.sql
@@ -641,6 +934,12 @@ File: 13-change_class.sql
 14. Average
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 13-change_class.sql
+14. Average
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that computes the score average of all records in the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 The result column name should be average
@@ -652,6 +951,7 @@ average
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 14-average.sql
@@ -659,6 +959,12 @@ File: 14-average.sql
 15. Number by score
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 14-average.sql
+15. Number by score
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that lists the number of records with the same score in the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 The result should display:
@@ -674,6 +980,7 @@ score   number
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 15-groups.sql
@@ -681,6 +988,12 @@ File: 15-groups.sql
 16. Say my name
 mandatory
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 15-groups.sql
+16. Say my name
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 Don’t list rows without a name value
@@ -699,6 +1012,7 @@ score   name
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 16-no_link.sql
@@ -706,6 +1020,12 @@ File: 16-no_link.sql
 17. Go to UTF8
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 16-no_link.sql
+17. Go to UTF8 #advanced
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Write a script that converts hbtn_0c_0 database to UTF8 (utf8mb4, collate utf8mb4_unicode_ci) in your MySQL server.
 
 You need to convert all of the following to UTF8:
@@ -722,6 +1042,7 @@ first_table CREATE TABLE `first_table` (\n  `id` int(11) DEFAULT NULL,\n  `name`
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 100-move_to_utf8.sql
@@ -729,6 +1050,12 @@ File: 100-move_to_utf8.sql
 18. Temperatures #0
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 100-move_to_utf8.sql
+18. Temperatures #0 #advanced
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Import in hbtn_0c_0 database this table dump: download
 
 Write a script that displays the average temperature (Fahrenheit) by city ordered by temperature (descending).
@@ -758,6 +1085,7 @@ Peoria  66.5392
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 101-avg_temperatures.sql
@@ -765,6 +1093,12 @@ File: 101-avg_temperatures.sql
 19. Temperatures #1
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 101-avg_temperatures.sql
+19. Temperatures #1 #advanced
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Import in hbtn_0c_0 database this table dump: download (same as Temperatures #0)
 
 Write a script that displays the top 3 of cities temperature during July and August ordered by temperature (descending)
@@ -778,6 +1112,7 @@ Sunnyvale   73.2353
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
 Directory: 0x0D-SQL_introduction
 File: 102-top_city.sql
@@ -785,6 +1120,12 @@ File: 102-top_city.sql
 20. Temperatures #2
 #advanced
 Score: 0.00% (Checks completed: 0.00%)
+=======
+GitHub repository: holbertonschool-higher_level_programming
+Directory: 0x0D-SQL_introduction
+File: 102-top_city.sql
+20. Temperatures #2 #advanced
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Import in hbtn_0c_0 database this table dump: download (same as Temperatures #0)
 
 Write a script that displays the max temperature of each state (ordered by State name).
@@ -798,6 +1139,10 @@ IL  110
 guillaume@ubuntu:~/$ 
 Repo:
 
+<<<<<<< HEAD
 GitHub repository: alx-higher_level_programming
+=======
+GitHub repository: holbertonschool-higher_level_programming
+>>>>>>> cd64d446a3f62661a57a054304a60636aac1ae4d
 Directory: 0x0D-SQL_introduction
 File: 103-max_state.sql
