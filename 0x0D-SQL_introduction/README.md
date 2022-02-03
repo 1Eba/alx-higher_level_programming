@@ -2,15 +2,7 @@
 
 
  By Guillaume
- Weight: 1
- Ongoing second chance project - started 02-02-2022, must end by 02-04-2022 (in about 14 hours) - you're done with 0% of tasks.
- QA review fully automated.
-In a nutshell…
-Auto QA review: 0.0/104 mandatory & 0.0/24 optional
-Altogether:  0.0%
-Mandatory: 0.0%
-Optional: 0.0%
-Calculation:  0.0% + (0.0% * 0.0%)  == 0.0%
+ 
 
 
 Resources
