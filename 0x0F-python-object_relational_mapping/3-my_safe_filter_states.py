@@ -1,21 +1,15 @@
 #!/usr/bin/python3
-
-import MySQLdb
+"""SQL injection"""
 from sys import argv
+import MySQLdb
 
-"""
-A script that takes in an argument and displays all values
-in the states table of hbtn_0e_0_usa where name matches the argument
-"""
-if __name__ == "__main__":
 
-    db = MySQLdb.connect(host="localhost", user=argv[1], passwd=argv[2],
-                         db=argv[3], port=3306)
-
-    cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE %s", (argv[4], ))
-    rows = cur.fetchall()
-    for row in rows:
-        print(row)
-    cur.close()
-    db.close()
+if __name__ == '__main__':
+    user, password, database, state = argv[1], argv[2], argv[3], argv[4]
+    db = MySQLdb.connect(host="localhost",
+                         user=user, passwd=password, db=database)
+    db = db.cursor()
+    db.execute("""SELECT * FROM states WHERE name=%s ORDER BY id""", (state,))
+    r = db.fetchall()
+    for i in r:
+        print(i)
