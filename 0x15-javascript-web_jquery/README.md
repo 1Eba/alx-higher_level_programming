@@ -4,8 +4,8 @@
 ```
 For this project, students are expected to look at these concepts:
 
- JavaScript in the browser
- Dealing with data statically versus dynamically
+- [JavaScript in the browser]https://alx-intranet.hbtn.io/concepts/3
+- [Dealing with data statically versus dynamically]https://alx-intranet.hbtn.io/concepts/35
 ```
 
 # Resources
