@@ -1,12 +1,6 @@
 ## 0x15. JavaScript - Web jQuery
 
 # Concepts
-```
-For this project, students are expected to look at these concepts:
-
-- [JavaScript in the browser]https://alx-intranet.hbtn.io/concepts/3
-- [Dealing with data statically versus dynamically]https://alx-intranet.hbtn.io/concepts/35
-```
 
 # Resources
 
